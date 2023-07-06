@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> About Us</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styl.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <section class="sub-header">
+            <nav>
+                <img class="logo"src="{{ url_for('static', filename='img/Black.png') }}">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" aria-hidden="true" onClick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/experience/">Our Experience</a></li>
+                        <li><a href="https://www.worldfinancialgroup.com">What is WFG?</a></li>
+                        <li><a href="https://registration.wfglaunch.com">Register at WFG</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onClick="showMenu()"></i>
+            </nav>
+
+            <div class="hero">
+                <h1>About ME</h1>
+                <img src="{{ url_for('static', filename='img/try3.jpeg') }}">
+                <content>
+                    As a part of World Financial Group, a Transamerica company, I have had the privilege of assisting numerous individuals and families in achieving financial stability through our comprehensive life insurance, retirement, and wealth-building strategies. 
+
+Alongside my dedicated team, as independent agents at World Financial Group Insurance Agency, LLC or its subsidiaries in the United States or World Financial Group Insurance Agency of Canada Inc., we are thrilled to offer guidance to both groups and individuals like yourself. Our mission is to provide education and create a tailored strategy that aligns with your specific needs. We are equipped to inform you about relevant products and opportunities that can support your financial goals, allowing you to prioritize what truly matters – building a better life for yourself and your loved ones.
+                </content>
+                <h4>Kavita Mittal</h4> 
+                <p>
+                    Financial Professional
+                </p>
+            </div>
+        </section>
+
+        <section class="footer">
+            <h4>Contact US at</h4>
+                Call us: <a class="hero-btn" href="tel:+18146005526">+1 (814)-600-5526</a>
+                <br>
+                <br>
+                Email: <a class= "hero-btn" href="/send_email/">ehsaasgloballl@gmail.com</a>
+            </p>
+            
+                <div class="icons">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                </div>
+
+        </section>
+        
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }   
+        </script>
+
+    </body>
+</html>

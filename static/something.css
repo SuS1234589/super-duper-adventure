@@ -1,0 +1,191 @@
+
+header {
+    text-align: center;
+    background-color: rgb(116, 116, 250);
+    padding: 0px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 100;
+  }
+  
+  nav {
+      background-color: white;
+      padding: 30px; /* Increase the padding to make the navbar thicker */
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 9999;
+    }
+    
+    hr {
+      position: fixed;
+      top: 70px; /* Adjust the top position to position the horizontal line below the navbar */
+      width: 100%;
+      border: none;
+      height: 1px;
+      background-color: black;
+    }
+    h1{
+      margin-top: 100;
+    }
+      
+    body {
+      margin-top: 60px; /* Adjust this value based on the height of your navigation bar */
+    
+    }
+  
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    li {
+      margin-right: 130px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px;
+      border-radius: 5px;
+      transition: background-color 0.5s, color 0.5s, text-decoration 0.5s;
+    }
+    
+    a:hover {
+      background-color: rgb(34, 34, 54);
+      color: white;
+      text-decoration: underline;
+    }
+    
+    
+    
+    
+    .about-section {
+      background: linear-gradient(to bottom, #ffffff 0%, #f2f2f2 100%);
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    
+    h1 {
+      font-size: 60px; /* Decrease the font size of the heading */
+    }
+    
+    p {
+      font-size: 18px; /* Increase the font size of the paragraph tags */
+    }
+    
+    .story-block {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fade-in 1s ease-in-out forwards;
+    }
+    
+    .fade-in {
+      animation-delay: 0.5s;
+    }
+    
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fade-in 1s ease-in-out forwards;
+    }
+    
+    @keyframes fade-in {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    .special-section {
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  
+    .special-section h3 {
+      color: red;
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .special-section p {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .special-section {
+      display: flex;
+      align-items: center;
+  }
+  
+  .logo {
+      width: 200px; /* Adjust the width to fit your logo */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 10px; /* Add some margin on the right side of the logo */
+  }
+  
+  .content {
+      flex: 1; /* Take up remaining space */
+  }
+  
+  .contact-info {
+      margin: 0; /* Remove default margin */
+  }
+  .course{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  
+  }
+  h2{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  
+  }
+  
+  h4{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  .course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0, 0.2);
+  }
+  
+  @media(max-width: 700px){
+    .row{
+      flex-direction: column;
+    }
+  }

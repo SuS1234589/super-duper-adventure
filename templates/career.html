@@ -1,0 +1,81 @@
+{% extends 'home_base.html' %}
+{% block title_of_page %}Careers{% endblock title_of_page %}
+{% block body_content %}
+<header class="fade-in-up">
+        <h1 style="background-color: mistyrose;">Build Your OWN Business With WFG</h1>   
+</header>
+
+<style>
+    .split-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+      margin-top: 50px;
+      background-color: mistyrose;
+      padding: 20px;
+    }
+  
+    .split-section img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .split-section h2,
+    .split-section p {
+      color: black;
+    }
+  
+    .split-section .text-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .split-section .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: white;
+        color: black;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        background-image: linear-gradient(to right, lightblue 50%, white 50%);
+        background-size: 200% 100%;
+        transition: background-position 0.3s, background-color 0.3s ease;
+      }
+      
+      .split-section .button:hover {
+        background-position: -100% 0;
+        background-color: blue;
+      }
+      body{
+        background-color: mistyrose;
+      }
+      
+  
+  </style>
+
+  <div class="split-section fade-in-up">
+    <div>
+      <h2>What's Stopping you?</h2>
+      <p>
+
+        Leverage WFG's turnkey business platform, 
+        you can build your own financial services business on 
+        your terms. Start full-time or part-time to earn extra 
+        income at your leisure. The WFG business opportunity is 
+        about helping protect people in your community while 
+        having the flexibility to grow your business as large as
+        you desire</p>
+      <a href="https://www.worldfinancialgroup.com/business-model" class="button">Learn More</a>
+    </div>
+    <div>
+        <img src="{{ url_for('static', filename='img/teamwor.webp') }}"
+        class="image"/ >
+    </div>
+  </div>
+
+
+<br>
+{% endblock body_content %}

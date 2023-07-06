@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> {% block title_of_page %}Website{% endblock title_of_page %} </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <section class="header">
+            <nav>
+                <img src="static/img/Black.png" class="logo">
+                <div class="nav-links" id="navLinks">
+                    
+                    <i class="fa fa-times" aria-hidden="true" onClick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/experience/">Our Experience</a></li>
+                        <li><a href="https://www.worldfinancialgroup.com">What is WFG?</a></li>
+                        <li><a href="https://registration.wfglaunch.com">Register at WFG</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onClick="showMenu()"></i>
+            </nav>
+
+
+            <div class="text-box">
+                <h1>Kavita Mittal</h1>
+                <p>Financial Professional</p>
+                <p>Want to retire and have unlimited wealth by 50?
+                    <br>
+                    See What I can do for you <i class="fa fa-long-arrow-down"></i>
+                </p>
+                
+            </div>
+        </section>
+
+    <section class="course">
+    <h2>What I can do for you</h2>
+    
+
+    <div class="row">
+
+        <div class="course-col">
+            <h3>Child Education Planning</h3>
+            <p>Without a proper education savings plan, the costs of post-secondary education can put a strain on a household’s savings. We as WFG agents can offer a client an individual education plan, based on your and your child’s needs, that can help you support the cost for K-12 private schools and/or tuition and fees of college.</p>
+        </div>
+
+        <div class="course-col">
+            <h3>Retirement Strategies</h3>
+            <p>Coming up with a retirement savings plan of your own can be stressful. No matter how you plan to spend your years in retirement, it’s best to be prepared for whatever may come your way. If you’re unsure if you have the right retirement savings plan or want to know what your savings should be by your age, contact us as a licensed agents to help guide you to a strategy that works best for you.</p>
+        </div>
+    
+
+
+        <div class="course-col">
+            <h3>Estate Preservation</h3>
+            <p>We help you keep more of what you’ve earned. Working with your tax and legal professionals, we’ll develop a strategy to help preserve your legacy and avoid it decreasing due to federal and, in the United States, estate taxes utilizing various products:
+                <br>
+                Charitable Strategies & Trusts (U.S. Only)
+                <br>
+                Life Insurance Trusts (U.S. Only)
+                <br>
+                Wealth Replacement Trusts (U.S. Only)
+                <br>
+                Life Insurance (Canada Only)
+                <br>
+                Annuities (Canada Only)</p>
+        </div>
+    </div>
+        <div class="course-col">
+            <h3>Business Strategies</h3>
+            <p>For the small business owner, we provide financial strategies for you, your employees and your business, including: 
+                <br>
+                Insurance Strategies
+                <br>
+                Retirement Strategies
+                <br>
+                Executive Compensation (U.S. Only)
+                <br>
+                Business Continuation Programs (U.S. Only)
+        </div>
+</section>
+
+<section class="course">
+    <div class="expect">
+        <h2>What to Expect as a Client</h2>
+        <p>When engaging the services of a financial professional, it is essential to seek individuals who possess extensive knowledge, demonstrate trustworthiness, and prioritize your best interests. Rest assured, as a World Financial Group agent, these qualities define our commitment to you. Our agents are dedicated to collaborating with you to develop an affordable and personalized plan of action that aligns precisely with your unique needs and goals. By choosing our services, you can expect an unwavering focus on your financial well-being and a tailored approach that sets you on the path to success.</p>
+        </div>
+</section>
+
+<section class="course">
+    <div class="hello">
+    <h2>Make an appointment Today!</h2>
+    <p>Our First appointment is of no charge! <i class="fa fa-star"></i></p>
+      </button>
+      </div>
+      <button type="button" onclick="window.location.href = 'https://calendly.com/noreplykm944/30min';">
+        <span></span>Make an appointment</button>
+    
+    </section>
+<hr>
+
+<section class="footer">
+    <h4>Contact US at</h4>
+        Call us: <a class="hero-btn" href="tel:+18146005526">+1 (814)-600-5526</a>
+        <br>
+        <br>
+        Email: <a class= "hero-btn" href="/send_email/">ehsaasgloballl@gmail.com</a>
+    </p>
+    
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+
+</section>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }   
+        </script>
+
+    </body>
+</html>
